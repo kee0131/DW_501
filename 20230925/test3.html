@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    fieldset{width: 300px;
+    height:auto ;
+  border-color: aqua;}
+    legend{background-color: aquamarine;}
+    border: 2px boder-color:red
+
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+  고객 명 : <input type="text" name="name"><br>
+  전화번호 : <input type="tel" name="number"><br>
+  E-mail : <input type="text" name="name"><br>
+
+
+   <fieldset>
+  <legend>피자 사이즈</legend><br>
+  <label for="size"></label>
+ <p> <input type="radio" name="size" id="size" value="size" />small</p>
+  <label for="size"></label>
+  <p> <input type="radio" name="size" id="size" value="size" />Medium</p>
+  <label for="size"></label>
+ <p> <input type="radio" name="size" id="size" value="size" />Large</p><br><br></fieldset>
+ 
+ <fieldset>
+ <legend>토핑선택<br></legend>
+  <label for="토핑"></label>
+ <p> <input type="checkbox" name="토핑" id="토핑" value="토핑" />베이컨</p>
+  <label for="토핑"></label>
+  <p><input type="checkbox" name="토핑" id="토핑" value="토핑" />치즈</p>
+  <label for="토핑"></label>
+  <p><input type="checkbox" name="토핑" id="토핑" value="토핑" />양파</p>
+  <label for="토핑"></label></legend>
+ <p> <input type="checkbox" name="토핑" id="토핑" value="토핑" />버섯</p></fieldset>
+  희망 배송시간: <input type="time"><br><br>
+  배송시 요청 사항 <textarea name="feedback" rows="5" cols="30"></textarea><br>
+  <input type="submit" value="주문하기"> <input type="reset" value="다시 선택">
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>
