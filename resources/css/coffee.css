@@ -1,0 +1,18 @@
+h1, p{
+  font-family:serif;
+  color: black;
+}
+span{font: size 2em; color: rgb(21, 245, 118)
+
+}
+em{font-size: 1.5em; color: blue
+}
+h1{
+  border-bottom: 10px solid rgb(224, 50, 50);
+  
+color: blue;
+}
+body{
+  font-size: large;
+  background-color: cadetblue;
+}
