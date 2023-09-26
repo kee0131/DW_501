@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+<fieldset>
+<legend>필수 입력 사항</legend>
+<p>ID <input type="text" name="ID" placeholder="아이디 10글자 이내">  <input type="submit" value="중복확인">
+<p>비밀번호<input type="number" name="number"  placeholder="영문, 숫자, 특수문자포함 8자 이상"></p>
+<p>비밀번호 확인<input type="number" name="number"></p>
+Email<input type="text" name="text"><select name="email" size="1" required>
+  <option>직접입력</option>
+ ></select>
+
+<option  value="naver.com">naver.com</option>
+<option  value="daum.com">daum.com</option>
+</fieldset>
+
+<fieldset>
+<legend>추가 정보</legend>
+<p>플로필 사진 <input type="file" accept="imge/jpeg,imge/gif" > 선택된 파일 없음</p>
+성별:
+<label for="male">남성</label>
+<input type="radio" name="gender" id="male" value="male" />
+<label for="female">여성</label>
+<input type="radio" name="gender" id="male" value="male"/><br>
+
+생년월일 : <input type="date"><br>
+취미<br>
+<label for="hope">야구</label>
+      <input type="checkbox"  name="hope" id="hope"  />
+  
+ <label for="h">농구</label>
+       <input type="checkbox"  name="h" id="h"  />
+      
+<label for="o">축구</label>
+      <input type="checkbox"  name="o" id="o"  /><br>
+
+ <label for="s">공부</label>
+      <input type="checkbox"  name="s" id="s"  />
+  <label for="m">음악감상</label>
+      <input type="checkbox"  name="m" id="hope"  /><br>
+  <label for="g">기타</label>
+      <input type="checkbox"  name="g" id="g"  />
+     <input type="name"><br>
+     자기소개
+     <textarea></textarea>
+
+
+
+
+
+</fieldset>
+
+
+
+  </form>
+  
+</body>
+</html>
