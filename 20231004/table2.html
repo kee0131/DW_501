@@ -16,36 +16,53 @@
       }
       td {
         text-align: center; */
-     
-      
-      #list{font-family: "Trebuchet MS", sans-serif; width: 100%;}
-      #list td, #list th{
-        border: 1px double;
+
+      #list {
+        font-family: 'Trebuchet MS', sans-serif;
+        width: 100%;
+      }
+      #list td,
+      #list th {
+        border: 1px dotted gray;
         text-align: center;
       }
 
-      #list th {color:  white;background-color: blue;}
+      #list th {
+        color: white;
+        background-color: blue;
+      }
       /* #list tr.alt td{background-color: brown;} */
-      tr:nth-child(odd){background-color: aquamarine;}
-      tr:nth-child(even){background-color: gray;}
-
-      
+      tr:nth-child(odd) {
+        background-color: aquamarine;
+      }
+      tr:nth-child(even) {
+        background-color: gray;
+      }
     </style>
   </head>
   <body>
     <table>
       <table id="list">
-        <tr><th>이름</th><th>이메일</th></tr>
-        <tr><td>김철수</td><td>chul@google.com</td><tr>
-        <tr class="alt"><td>김영희</td><td>young@google.com</td><tr>
-        <tr><td>홍길동</td><td>hong@google.com</td><tr>
-        <tr class="alt"><td>김수진</td><td>sujin@google.com</td><tr>
-    </table>
-
-
-
-      </th>
-
+        <tr>
+          <th>이름</th>
+          <th>이메일</th>
+        </tr>
+        <tr>
+          <td>김철수</td>
+          <td>chul@google.com</td>
+        </tr>
+        <tr class="alt">
+          <td>김영희</td>
+          <td>young@google.com</td>
+        </tr>
+     
+      <tr>
+        <td>홍길동</td>
+        <td>hong@google.com</td>
+      </tr>
+      <tr class="alt">
+        <td>김수진</td>
+        <td>sujin@google.com</td>
       </tr>
     </table>
   </body>
