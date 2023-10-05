@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    img {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: -1;
+      opacity: 0.3;
+    }
+    div {
+      width: 200px;
+      height: 200px;
+    }
+    #opacity {
+      width: 500px;
+      height: 300px;
+      background-color: rgb(10, 40, 50, 0.1);
+      /* opacity: 0.5; */
+    }
+  </style>
+  <body>
+    <div>
+      <img src="../resources/img/background.img.jpg" width="500" height="300" />
+      <p>img 요소의 z-index가 -1이므로 다른 요소 뒤에 위치한다</p>
+      <div id="opacity"></div>
+    </div>
+  </body>
+</html>
