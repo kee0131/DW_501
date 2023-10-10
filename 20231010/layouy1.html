@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>레이아웃 연습입니다</title>
+  </head>
+
+  <style>
+    div {
+      box-sizing: border-box;
+    }
+
+    html,
+    body,
+    #wrapper {
+      width: 100%;
+      height: 100%;
+    }
+
+    #header {
+      width: 100%;
+      height: 20%;
+      background-color: blue;
+    }
+
+    #nav {
+      width: 20%;
+      height: 60%;
+      background-color: rgb(125, 195, 20);
+      float: left;
+    }
+
+    #content {
+      width: 80%;
+      height: 60%;
+      background-color: rgb(227, 132, 14);
+      float: right;
+    }
+
+    #footer {
+      width: 100%;
+      height: 20%;
+      background-color: rgb(153, 15, 116);
+      clear: both;
+    }
+  </style>
+  <body>
+    <div id="wrapper">
+      <div id="header">header</div>
+      <div id="nav">nav</div>
+      <div id="content">content</div>
+      <div id="footer">footer</div>
+    </div>
+  </body>
+</html>

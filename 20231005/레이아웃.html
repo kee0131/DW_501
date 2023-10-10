@@ -6,35 +6,48 @@
   <title>Document</title>
 </head>
 <style>
+   html,
+    body,
+    #wrapper {
+      width: 100%;
+      height: 100%;
+    }
+
 #header{
   background-color: yellow;
-  width: 600px;
-  height: 100px;
-margin: 10px;
-border-radius: 30px;}
-  #nav{
-    background-color: blue;
-    width: 200px;
-    height: 500px;
-    margin: 10px;
-    float: left;
-    border-radius: 30px;
-  }
-  #content{
-    background-color:blueviolet;
-    width: 400px;
-    height: 500px;
-    margin: 10px;
-    float: left;
-    border-radius: 30px;
-  }
-  #footer{
-  background-color: rgb(221, 144, 217);
-  width: 600px;
+  width: 100px;
   height: 100px;
 margin: 10px;
 border-radius: 30px;
-float;clear: both;}
+text-align: center;}
+  #nav{
+    background-color: blue;
+    width: 100%;
+    height: 500px;
+    margin: 10px;
+    float: left;
+    border-radius: 30px;
+    text-align: center;
+
+  }
+  #content{
+    background-color:blueviolet;
+    width: 100%;
+    height: 500px;
+    margin: 10px;
+    float: left;
+    border-radius: 30px;
+    text-align: center;
+    
+  }
+  #footer{
+  background-color: rgb(221, 144, 217);
+  width: 100%;
+  height: 100px;
+margin:10px;
+border-radius: 30px;
+clear:both;
+text-align: center;}
 
 </style>
 
@@ -42,7 +55,7 @@ float;clear: both;}
 
 <body>
   <div id="wrapper">
-  <div id="header">header</div>
+   <div id="header">header</div>
   <div id="nav">nav</div>
   <div id="content">content</div>
   <div id="footer">footer</div>

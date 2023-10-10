@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>row direction</title>
+  </head>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+    }
+    ul {
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+      /* flex-direction: row; */
+      /* flex-direction: row-reverse; 오른쪽에서 왼쪽 */
+      /* flex-direction: column; 세로; */
+      flex-direction: column-reverse; /* 몰록순서가 거꾸로 됨*/
+    }
+    #container {
+      background-color: rgb(134, 134, 144);
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    #container > div {
+      width: 50px;
+      height: 50px;
+      background-color: orange;
+      margin: 5px;
+      padding: 5px;
+      flex-wrap: wrap;
+      display: flex;
+    }
+  </style>
+  <body>
+    <ul>
+      <li>거북이</li>
+      <li>호랑이</li>
+      <li>강아지</li>
+      <li>고양이</li>
+      <li>고릴라</li>
+    </ul>
+
+    <div id="container">
+      플렉스 컨테이너 ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ 화면 줄이면 두줄이 됨
+
+      <!-- <div>flex</div>
+      <div>flex</div>
+      <div>flex</div>
+      <div>flex</div>
+      <div>flex</div>
+      <div>flex</div>
+      <div>flex</div>
+      <div>flex</div>
+      <div>flex</div>
+      <div>flex</div> -->
+    </div>
+  </body>
+</html>
