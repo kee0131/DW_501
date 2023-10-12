@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>그리드 연습1</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0px;
+    }
+
+    ul {
+      padding: 0px;
+      list-style: none;
+      border: 5px solid blue;
+    }
+    li {
+      background-color: solid antiquewhite;
+      border: 5px solid tomato;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      display: grid;
+      height: 500px;
+      /* grid-template-columns: 10% 20% 10%; */
+      /* grid-template-rows: 20% 30% 10%; */
+
+      /* grid-template-columns: 100px 100px 250px 100px; */
+      /* grid-template-rows: 30px 30px 30px; */
+
+      /* grid-template-columns: 1fr 2fr 1fr; */
+      /* grid-template-rows: 2fr 1fr 2fr; */
+
+      /* grid-template-columns: 100px 2fr 1fr; */
+      /* grid-template-rows: 100px 2fr 1fr; */
+
+      /* grid-template-columns: repeat(3, 1fr 3fr 2fr); */
+      /* grid-template-rows: repeat(3, 1fr 3fr 2fr); */
+
+      /* grid-template-columns: repeat(2, minmax(100px, 1fr)); */
+
+      /* grid-template-columns: repeat(auto-fill, minmax(20%, auto)); */
+
+      /* grid-template-columns: 10% 20% 10% 30%; */
+
+      /* grid-template-columns: repeat(2, 2fr 3fr); */
+
+      /* grid-template-columns: 30% 10% 10% 20%; */
+      /* grid-template-rows: 40% 10% 20%; */
+
+      /* grid-template-columns: 40% 10% 10% 20% 10%; */
+
+      grid-template-columns: repeat(3, 20% 10% 20%);
+      grid-template-rows: 20% 10% 20%;
+    }
+  </style>
+  <body>
+    <ul class="container">
+      <li class="item">1</li>
+      <li class="item">2</li>
+      <li class="item">
+        3
+        <!-- 3 Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum> >Lorem ipsum>Lorem -->
+      </li>
+      <li class="item">4</li>
+      <li class="item">5</li>
+      <li class="item">6</li>
+      <li class="item">7</li>
+      <li class="item">8</li>
+      <li class="item">9</li>
+      <!-- <li class="item">10</li> -->
+    </ul>
+  </body>
+</html>
