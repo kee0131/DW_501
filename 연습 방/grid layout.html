@@ -18,9 +18,7 @@ ul{
     padding: 0%;
     list-style: none;
 
-   
-    padding: 0;
-    list-style: none;}
+  }
 
     li{
         background-color: darkcyan;
@@ -32,34 +30,34 @@ ul{
 .contaier{
     display: grid;
     height: 500px;
-    grid-template-rows: 1fr 4fr 1fr;
-grid-template-columns: 1fr 3fr 4fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+      grid-template-columns: 100px 100px;
+
+
+grid-template-areas: 
+"헤더 헤더 헤더 헤더"
+"내용 컨텐츠 컨텐츠 컨텐츠"
+"내용 컨텐츠 컨텐츠 컨텐츠"
+"바닥 바닥 바닥 바닥";}
+
 
 
 
 li:nth-last-child(1){
-    grid-template-columns: 1fr;
+    grid-area: 헤더;
 }
 
 li:nth-last-child(2){
-    grid-template-columns: 1fr;
+    grid-area: 내용;
 }
 
 li:nth-last-child(3){
-    grid-template-columns: 1fr;
+    grid-area: 컨텐츠;
 }
 
 li:nth-last-child(4){
-    grid-template-columns: 1fr;
+    grid-area: 바닥;
 }
-
-
-
-     
-       
-
-
-
 
 </style>
 
