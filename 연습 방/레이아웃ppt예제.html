@@ -1,132 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<style>
-*{
-    box-sizing: border-box;
-}
-body{
-    margin: 0px;
-}
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0px;
+    }
 
-ul{
- 
-    padding: 0%;
-    list-style: none;
-margin: 10px;}
-    
-    li{
-        
+    ul {
+      padding: 0%;
+      list-style: none;
+      margin: 10px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    li {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      border-radius: 30px;
+      margin: 5px;
+    }
+
+    .contaier {
+      display: grid;
+      height: 500px;
+      margin: 10px;
+    }
+
+    li:nth-last-child(1) {
+      grid-area: header1;
+    }
+
+    li:nth-last-child(2) {
+      grid-area: header2;
+    }
+
+    li:nth-last-child(3) {
+      grid-area: nav;
+    }
+
+    li:nth-last-child(4) {
+      grid-area: contents;
+    }
+    li:nth-last-child(5) {
+      grid-area: nav2;
+    }
+    li:nth-last-child(6) {
+      grid-area: footer;
+    }
+
+    .contaier {
+      grid-template-areas:
+        'header1 header1 header1 header1 header1'
+        'header2 header2 header2 header2 header2'
+        'nav contents contents contents nav2'
+        'nav contents contents contents nav2'
+        'nav contents contents contents nav2'
+        'nav contents contents contents nav2'
+        'footer footer footer footer footer';
+    }
+
+    .item6 {
+      text-align: center;
+      color: purple;
+      font-size: 25px;
+    }
+  </style>
+
+  <body>
+    <h1 style="text-align: center">main.thtml</h1>
+    <br />
+    <ul class="contaier">
+      <li style="ble="background-color: indianred" class="item2">DW아카데미 042-123-4567</li>
+      <li style="background-color: darksalmon" class="item1"></li>
+      <li styackground-color: aliceblue" class="item3">nav</li>
+      <li style="background-color: hotpink" class="item4">contents</li>
+      <li style="background-color: darkorchid" class="item5">
    
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        border-radius: 30px;
-    margin: 5px;}
-        
-    .contaier{
-    display: grid;
-    height: 500px;
-    margin: 10px;}
-
-
-
-li:nth-last-child(1){
-    grid-area:header1 ;
-}
-
-li:nth-last-child(2){
-    grid-area: header2;
-}
-
-li:nth-last-child(3){
-    grid-area: nav;
-}
-
-li:nth-last-child(4){
-    grid-area: contents;
-}
-li:nth-last-child(5){
-    grid-area: nav2;
-}
-li:nth-last-child(6){
-    grid-area: footer;
-}
-
-.contaier{
-    grid-template-areas:
-    "header1 header1 header1 header1 header1"
-    "header2 header2 header2 header2 header2"
-    "nav contents contents contents nav2"
-    "nav contents contents contents nav2"
-    "nav contents contents contents nav2"
-    "nav contents contents contents nav2"
-    "footer footer footer footer footer"
-
-    
-
-}
-
-
-
-.item6{
- text-align: center;
-color: purple;
-font-size: 25px;}
-
-
-    
-
-      
-
-
-
-
-        
-
-
-
-
-
-
-</style>
-
-<body>
-<h1 style="text-align: center;">main.thtml</h1><br>
-<ul  class="contaier">
-<li style="background-color: darksalmon;" class="item1"></li>
-<li style="background-color: indianred;" class="item2">DW아카데미 042-123-4567</li>
-<li style="background-color: aliceblue;"  class="item3">nav</li>
-<li  style="background-color: hotpink;" class="item4">contents</li>
-<li style="background-color: darkorchid" class="item5">nav2</li>
-<ul style="display: inline;">
-    <li>HOME</li>
-    <li>SHOPING ABOUT</li>
-    <li>NEWS</li>
-    <li>MY ACCOUNT</li>
-    <li>CONTACTS</li></ul>
-    
-   
-
-
-
-<li style="background-color: yellow;" class="item6" img src="../resources/img/쇼핑.jpg"width=70 height=70>Web shopping</li>
-</ul>
-
-
-
-
-
-
-
-
-
-
-
-    
-</body>
+          <li>HOME</li>
+          <li>SHOPING ABOUT</li>
+          <li>NEWS</li>
+          <li>MY ACCOUNT</li>
+          <li>CONTACTS</li>
+        </ul>
+      </li>
+       <li style="background-color: yellow" class="item6">쇼핑</li>
+    </ul>
+  </body>
 </html>

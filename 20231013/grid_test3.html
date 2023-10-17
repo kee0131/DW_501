@@ -12,60 +12,18 @@
     body {
       margin: 0px;
     }
-
-    ul {
-      padding: 0px;
-      list-style: none;
-      border: 5px solid blue;
-    }
-    li {
-      background-color: solid green;
-      border: 5px solid tomato;
-      border-radius: 8px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .container {
+    #wrapper {
       display: grid;
-      height: 500px;
-
-      grid-template-rows: 100px 1fr 100px;
-      grid-template-columns: 100px 100px;
-
-      /* grid-template-areas:
-        /* 'header header header'
-        'main aside .'
-        'footer footer footer'; */
-      gap: 10px;
-      grid-template-areas:
-        'header header header header header  header header '
-        'aside main main main main main main'
-        'aside main main main main main main'
-        'aside main main main main main main'
-        'aside footer  footer footer footer footer footer';
-    }
-    li:nth-child(1) {
-      grid-area: header;
-    }
-    li:nth-child(2) {
-      grid-area: main;
-    }
-
-    li:nth-child(3) {
-      grid-area: aside;
-    }
-
-    li:nth-child(4) {
-      grid-area: footer;
+      margin: 5px;
+      border-radius: 10px;
     }
   </style>
   <body>
-    <ul class="container">
-      <li class="item">HEADER</li>
-      <li class="item">MAIN</li>
-      <li class="item">ASIDE</li>
-      <li class="item">FOOTER</li>
-    </ul>
+    <div id="wrapper">
+      <div id="header">ㅇ</div>
+      <div id="nav">ㅇㅇ</div>
+      <div id="main" ㅇ></div>
+      <div id="footer">ㅇ</div>
+    </div>
   </body>
 </html>
