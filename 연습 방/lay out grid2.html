@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+ *{box-sizing: border-box;}
+
+body{
+    margin: 0%;
+}
+html,
+body,
+#wapper{
+
+    width: 100%;
+    height: 100%;
+  
+  }
+  #wapper{
+    display: grid;
+    grid-template-rows: 1fr 1fr 4fr 1fr;
+    gap: 1%;
+  
+   
+    
+  }
+
+  
+  
+#header1{
+background-color: coral;
+display: flex;
+align-content: center;
+justify-content: center;}
+
+
+div#header1 > div > img{
+display: flex;
+width: 100%; 
+align-content: center;
+justify-content: center;}
+
+
+div#header1 > div > span {
+display: flex;
+width: 100%; 
+font-size: 25px;
+font-weight: 900;
+color: darkmagenta;}
+
+
+
+
+
+
+#header2{ 
+    background-color: deepskyblue;
+   
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-content: center;
+    margin: 0;
+}
+li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+     
+
+#aside1{
+    background-color: lightblue;
+
+
+}
+
+
+#main{
+    background-color: lightgreen;
+
+
+}
+
+#aside2{
+    background-color: darkmagenta;
+
+
+}
+#footer{
+background-color: plum;
+
+}
+
+#묶음{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 1%;
+}
+
+
+#cory{
+    background-color: indianred;
+    list-style-type: none;
+    padding: 0;
+}
+#cory li{
+    border-bottom: 1px solid plum;
+    padding: 8% 8%;
+} 
+.class{
+    padding: 10%; 
+    margin: 10%;
+}
+
+
+</style>
+<body>
+<div id="wapper">
+<div  id="header1"> 
+    <div>
+        <img src="../resources/img/coffee.jpg">
+        <span> 쇼핑 샵</span>
+    </div>
+</div>
+<ul id="header2">
+
+<li><a href="#">HOME</a></li>
+<li><a href="#">SHOPPING</a></li>
+<li><a href="#">ABOUT</a></li>
+<li><a href="#">NEWS</a></li>
+<li><a href="#">MY ACCOUNT</a></li>
+<li><a href="#">CONTACTS</a></li>
+</ul>
+
+
+</ul>
+<div id="묶음">
+    <div id="aside1" class="aside"><h3>카테고리</h3>
+    <ul id="cory">
+        <li> <a href="#" >컴퓨터</a></li>
+        <li> <a href="#" >의류</a></li>
+        <li> <a href="#" >음악</a></li>
+        <li> <a href="#" >영화</a></li>
+        <li> <a href="#" >스포츠/레저</a></li>
+        <li> <a href="#" >가구/인테리어</a></li>
+        <li> <a href="#" >식품</a></li>
+    </ul></div>
+    <div id="main">메인</div>
+    <div id="aside2" class="aside">
+<h3>Shopping  Cart</h3>
+현재 쇼핑카트에 물품이 없습니다.<br>
+Log In<br><br>
+아이디<br>
+<input type="text"><br>
+패스워드<br>
+<input type="password"><br><br>
+<button>로그인</button> <button>초기화</button><br><br>
+
+<a href="#">회원가입</a><a href="#">비밀번호 분실</a>
+
+
+
+
+    </div>
+     </div>
+<div id="footer">바닥</div>
+
+
+
+
+    
+</body>
+</html>
