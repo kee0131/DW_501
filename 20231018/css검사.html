@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+  }
+  html,
+  body,
+  #wrapper {
+    width: 100%;
+    height: 100%;
+  }
+#wrapper{
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr;
+    gap: 1%;
+    border-radius: 30px;
+    
+}
+  #header{
+    background-color: aqua;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    font-size: 25px;
+}
+#content{
+    /* background-color: blue; */
+    display: grid;
+    grid-template-columns: 2fr 4fr;}
+   
+   
+    #aside{
+        background-color: blueviolet;
+        display: grid;
+      
+       
+        
+    }
+    #nav{
+      
+        background-color: black;
+    
+      display: grid;
+      
+    }
+
+
+#footer{
+    background-color: crimson;
+    
+
+}
+#item1{
+    background-color: blanchedalmond;
+}
+
+#item2{
+    background-color: cornflowerblue;
+}
+#ltem3{
+    background-color: darkorange;
+}
+
+
+</style>
+<body>
+<div id="wrapper">
+<div id="header"><h1>shopping</h1></div>
+<div id="content">
+    <div id="aside">리스트</div>
+
+    <div id="nav">
+    <div id="item1" class="item"></div>
+    <div id="item2" class="item"></div>
+    <div id="item3" class="item"></div>
+         </div>
+         </div>
+
+
+    
+    
+
+<div id="footer">바닥</div>
+
+</div>
+    
+</body>
+</html>
