@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      fieldset {
+        width: 300px;
+
+        height: auto;
+        border-color: red;
+      }
+      legend {
+        color: aliceblue;
+
+        background-color: black;
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body></body>
+  고객명:<input type="text" placeholder="홍길동" /><br />
+  전화번호 :
+  <input type="number" placeholder="010-1234-1234" /><br />
+  Email :
+  <input type="email" placeholder="ooooo@ooo.com" /><br />
+
+  <fieldset>
+    <legend>피자사이즈</legend>
+    <input type="radio" name="gender" value="Small" />Small<br />
+    <input type="radio" name="gender" value="Medlium" />Medium<br />
+    <input type="radio" name="gender" value="Large" />Large<br />
+  </fieldset>
+  <fieldset>
+    <legend>토핑 선택</legend>
+    <input type="checkbox" name="gender" value="베이컨" />베이컨<br />
+    <input type="checkbox" name="gender" value="치즈" />치츠<br />
+    <input type="checkbox" name="gender" value="양파" />양파<br />
+    <input type="checkbox" name="gender" value="버섯" />버섯<br />
+  </fieldset>
+  <br />
+  희망배송시간 :
+  <input type="time" /><br />
+  배송시 요청사항:<br />
+
+  <textarea></textarea>
+
+  <br />
+  <input type="submit" value="주문하기" />
+  <input type="submit" value="다시 선택하기" />
+</html>
