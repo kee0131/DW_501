@@ -91,14 +91,13 @@
         transform: rotateX(-1turn) rotateY(-1turn) rotateZ(-1turn);
       } */
 
-    @keyframes rotatecube {
+    @keyframes rotatecube 
+      @keyframes rotateCube 
       from {
-        transform: rotateX(1turn) rotateY(1turn) rotateZ(1turn);
-      }
-
-      to {
-        transform: rotateX(-1turn) rotateY(-1turn) rotateZ(-1turn);
-      }
+      transform: translateZ(-500px) translateX(-500px) translateY(500px) rotateX(360deg) rotateY(0deg) rotateZ(0deg);
+    }
+    to {
+      transform: translateZ(500px) translateX(500px) translateY(-500px) rotateX(0deg) rotateY(360deg) rotateZ(360deg);
     }
   </style>
 

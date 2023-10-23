@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var x; //underfiend 선언만 한 상태 빈칸이라고 생각하자
+
+      document.write(`<h1>${x}</h1>`);
+      x = 2; //좌변에다가 우변에 있는 값을 할당한다.
+      document.write(`<h1>${x}</h1>`);
+      let y;
+      y = 10;
+      document.write(`<h1>${y}</h1>`); //좌변에다가 우변에 있는 값을 할당한다.
+      const z = 0;
+      document.write(`<h1>${z}</h1>`);
+      // const z = 10;
+      // document.write(`<h1>${z}</h1>`);
+
+      // const는 반드시 선언과 동시에 초기화가 되어야한다
+      let sum; //전역변수 선언
+      let res;
+      function add(a, b) {
+        // sum = a + b; 지역번수로 선언
+        sum = a + b;
+      }
+
+      function sub(a, b) {
+        res = a - b;
+      }
+
+      add(4, 5);
+      document.write('add=' + sum + '<br>'); //오류, 변환값을 이용
+
+      sub(10, 4);
+      document.write('sub=' + res); //오류, 변환값을 이용
+
+      // let x;
+      // x = 'Hello World!';
+      // alert(x);
+    </script>
+  </body>
+</html>
