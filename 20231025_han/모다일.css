@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#modal_back {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#modal_win {
+  background-color: aliceblue;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 3px 8px 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+#modal_hearder {
+  height: 30px;
+  border-bottom: 1px solid red;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#modal_header h4 {
+  float: left;
+}
+#modal_close {
+  float: right;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+}
