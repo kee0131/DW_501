@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DataType(자료형)</title>
+  </head>
+  <body></body>
+  <script>
+    //데이터 타입을 알아보자
+    //1. string-문자열
+    const str1 = 'smith';
+    const str2 = '1';
+    const str3 = 'true';
+    console.log(str1, typeof str1);
+
+    //2.Numer-숫자
+    const num1 = 1;
+    const num2 = 13843;
+    const num = 1.5;
+    console.log(num1, typeof num1);
+
+    //3.Boolean - 참, 거짓
+    const bool1 = true;
+    const bool2 = false;
+    console.log(bool1, typeof bool1);
+
+    //4.object-객체
+    const obj1 = [1, 2, 3, 4, 'smith']; //배열, Array
+    const obg2 = {
+      userName: 'smith',
+      userAge: 25,
+    };
+
+    console.log(obj2, typeof obj2);
+
+    //5. Undefiend - 값 없음
+    let undef1;
+    console.log(undef1, typeof undef1);
+
+    //6.Null - 아무것도 없다 =있음 의미없는 값 비어있는 값
+    let nullValue = null;
+    console.log(nullValue, typeof nullValue);
+  </script>
+</html>
