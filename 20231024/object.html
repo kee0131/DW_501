@@ -40,6 +40,7 @@
     //객체의 속성(프로퍼티)값을 가져오는 방법1
     console.log(person3.age);
     console.log(person3.child.name);
+    console.log(person3['name']);
     //객체의 속성(프로퍼티)값을 가져오는 방법2
     //저의 이름은 name이고 나이는 age이며, 성별은 gender입니다. 그리고 주소는 adderss입니다.
     let person4 = {
@@ -48,8 +49,7 @@
       gender: 'Female',
       address: '대전',
     };
-    console.log(person3['name']);
 
-    document.write(`저의 이름은 ${person4.name} 이고 나이는 ${person4.age}이며 성별은${person4.gender}입니다.`);
+    document.write("저의 이름은 ${person4.name} 이고 나이는 ${person4.age}이며 성별은${person4.gender}입니다.");                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
   </script>
 </html>
