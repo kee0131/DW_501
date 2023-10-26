@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #333;
+  font-size: 0.95em;
+  letter-spacing: -0.01em;
+}
+
+nav ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+header {
+  background-color: #06c;
+  height: 120px;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+header h1 {
+  float: left;
+  margin-top: 10px;
+}
+
+#header_right {
+  float: right;
+}
+
+#gnb {
+  margin-top: 10px;
+}
+#gnb > ul > li {
+  float: left;
+  margin-left: 10px;
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 3px 5px;
+}
+
+#gnb a {
+  color: white;
+}
+
+.gnb_sub {
+  display: none;
+  position: absolute;
+  width: 100px;
+  padding: 4px 5px;
+}
+.gnb_sub a {
+  display: block;
+  text-align: right;
+}
+
+.gnb_main:hover > .gnb_sub {
+  display: block;
+}
+#lnb {
+  clear: both;
+}
+.gnb_sub > a {
+}
+#병원소개 {
+  background-color: #333;
+}

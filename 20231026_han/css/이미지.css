@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+body {
+  font-family: 'noto sans kr', sans-serif;
+  color: bisque;
+  font-size: 0.95em;
+  letter-spacing: -0.01em;
+}
+
+nav ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+}
