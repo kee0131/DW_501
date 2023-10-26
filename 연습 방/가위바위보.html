@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body></body>
+<script>
+const person1 = prompt("가위바위보 중에 하나 적으세요")
+const person2 = prompt("가위바위보 중에 하나 적으세요")
+
+let result ="";
+switch(person1){
+case "가위":
+switch(person2){
+    case "바위":
+     result="두번째 사람이 이겼습니다";
+     break;
+    
+     case"가위":
+     result =("비겼습니다");
+    break;
+
+    case "보":
+    result =("첫번째 사람이 이겼습니다");
+    break;
+    default:
+        alert(" 가위. 바위.보 외 금지")
+}
+break; 
+case"바위":
+switch(person2){
+    case"바위":
+     result =("비겼습니다")
+     break;
+     case"가위":
+     result =("두번째 사람이 이겼습니다")
+     break;
+     case"보":
+     result =("첫번째 사람이 이겼습니다")
+     default:
+        result =("주먹 가위 보 외 금지")
+        break;
+    }
+
+switch(person2){
+    case"보":
+    result=("")
+ 
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+</script>
+</html>
