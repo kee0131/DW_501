@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body></body>
+
+<script>
+    const person1=prompt("첫번째 사람 가위 바위 보 입력하세요");
+    const person2=prompt("두번째 사람 가위 바위 보 입력하세요");
+
+    let result="";
+    if(person1=="가위"){
+        if(person2=="가위"){
+            result=("무승부");
+        }else if(person2==바위){
+             result="두번째 사람이 이겼습니다";
+        }else {
+             result="첫번째 사람이 이겼습니다";
+        }
+    }
+
+    if(person1=="바위"){
+        if(person2=="가위"){
+            result="첫번째 사람이 이겼습니다";
+        }else if(person2==바위){
+             result=("무승부");
+        }else{
+             result="두번째 사람이 이겼습니다";
+        }
+    }
+
+    if(person1=="보"){
+        if(person2=="가위"){
+            result=("두번째 사람이 이겼습니다");
+        }else if(person2==바위){
+             result="첫번째 사람이 이겻습니다";
+            }else {
+                result="무승부";
+            }
+        }
+           
+        
+    
+document.write(`사람1 ${person1} 사람2${person2}=결과${result}`);
+
+
+
+
+
+</script>
+</html>
