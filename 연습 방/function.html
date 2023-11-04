@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="name"></div>
+</body>
+<script>
+//사용자에게 이름을 받는다
+const username =prompt("이름을 적어주세요");
+
+
+//사용자에게 색상을 받는다
+const usercolor =prompt("색상을 적어주세요");
+
+    //이름의 색을 입력받은 색상명으로 바꾼다.
+    const dbrudgml = function (name, color){
+        const divel = document.getElementById("name");
+        divel.innerHTML = name;
+        divel.style.color =color;
+
+
+    };
+    dbrudgml(username, usercolor);
+</script>
+</html>
