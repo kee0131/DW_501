@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterVal</title>
+</head>
+<body>
+    <p>버튼을 누르면 3초 마다 경고 박스가 화면에 표시됩니다.</p>
+    <button onclick="showAlert()">눌러보세요</button>
+    <button onclick="stopInterVal()">정지</button>
+</body>
+<script>
+   let startInterVal;
+   
+   function showAlert(){
+    startInterVal=setInterval(function(){
+    alert("showal()을 3초 마다 경고 박스가 화면에 표시됩니다.");
+
+},3000);
+}
+       
+function stopInterVal(){
+    clearInterval(startInterVal);
+}
+
+const  alert1= alert.value;
+
+const p =document.createElement("p");
+p.innerHTML= inputval;
+let colorArr =[];
+
+for (let i=0; i<3; i++){
+        colorArr[i]=parseInt(Math.random()*256);
+};
+
+    console.log(colorArr);
+p.style.backgroundColor=`rgb(${colorArr[0]},${colorArr[1]},${colorArr[2]})`;
+    
+
+
+
+
+
+
+</script>
+</html>
