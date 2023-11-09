@@ -15,28 +15,29 @@
    
    function showAlert(){
     startInterVal=setInterval(function(){
-    alert("showal()을 3초 마다 경고 박스가 화면에 표시됩니다.");
+    // alert("showal()을 3초 마다 경고 박스가 화면에 표시됩니다.");
+    //1.RGB코드를 만들수 있도록 세개의 램덤 숫자를 생성한다
+    //1.1 생선된 랜덤 숫자를 배열 변수를 만든다
+    const colorArr=[];
 
-},3000);
+    for( let i=0; i<3; i++){
+        colorArr.push(parseInt(Math.random()*256));
+    }
+//2.배경색상을 변경하려는 대상을 가져온다(p태그)
+const pTag= document.querySelector("p")
+//3.가져온 p태그 스타일 속성의 backgroundcolor에 접근하여
+//rgb 값으로 위에서 생성해준 랜덤 숫자 세개를 넣어준다
+// .속성명
+// 객체안에 객체
+// 객체.속성명.
+pTag.style.backgroundColor=`rgb(${colorArr.toString()})`;
+},100);
 }
        
 function stopInterVal(){
     clearInterval(startInterVal);
 }
 
-const  alert1= alert.value;
-
-const p =document.createElement("p");
-p.innerHTML= inputval;
-let colorArr =[];
-
-for (let i=0; i<3; i++){
-        colorArr[i]=parseInt(Math.random()*256);
-};
-
-    console.log(colorArr);
-p.style.backgroundColor=`rgb(${colorArr[0]},${colorArr[1]},${colorArr[2]})`;
-    
 
 
 
