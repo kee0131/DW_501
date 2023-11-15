@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01-domTree</title>
+</head>
+<body>
+    <div id="content">
+        <h1 id="title-1">과일</h1>
+        <ul id="list-1">
+            <li>사과</li>
+            <li>딸기</li>
+            <li>바나나</li>
+            <li>오랜지</li>
+            <li>수박</li>
+            <li>복숭아</li>
+            <li>망고</li>
+            <li>코코넛</li>
+        </ul>
+        <h1 id="title-2">자동차</h1>
+        <ul id="list-2">
+            <li>아반떼</li>
+            <li>소나타</li>
+            <li>그랜저</li>
+            <li>코나</li>
+            <li>지바겐</li>
+            <li>티코</li>
+            <li>프린스</li>
+            <li>포니</li>
+        </ul>
+    </div>
+</body>
+<script>
+    const ul=document.getElementById("list-1");
+    
+    //자식요소(노드)
+    // console.log(ul.children[0])
+    ul.children[4] //==> 오랜지
+    ul.children[4].style.backgroundColor="orange"
+    
+    //부모 요소
+    console.log (ul.firstElementChild.innerHTML)
+    console.log(ul.parentElement)
+    ul.parentElement.style.border = "5px solid red";
+    
+    //부모요소&조상 요소
+    
+    console.log(ul.closest("div#content"));
+
+    //형제 요소
+    // console.log(ul.previousElementSibling)
+    // console.log(ul.nextElementSibling)
+    // console.log(ul.nextElementSibling.nextElementSibling)
+    // ul.nextElementSibling.nextElementSibling.lastElementChild.style.backgroundColor="orange"
+    // ul.nextElementSibling.nextElementSibling.firstElementChild.style.backgroundColor="red"
+    // ul.nextElementSibling.nextElementSibling.children[1].style.backgroundColor="orange"
+    // ul.nextElementSibling.nextElementSibling.children[2].style.backgroundColor="yellow"
+    // ul.nextElementSibling.nextElementSibling.children[3].style.backgroundColor="green"
+    // ul.nextElementSibling.nextElementSibling.children[4].style.backgroundColor="blue"
+    // ul.nextElementSibling.nextElementSibling.children[5].style.backgroundColor="navy"
+    // ul.nextElementSibling.nextElementSibling.children[6].style.backgroundColor=" purple"
+
+
+
+
+
+
+</script>
+</html>

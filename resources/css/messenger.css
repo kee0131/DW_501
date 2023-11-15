@@ -52,7 +52,7 @@ button{
     width: 60px;
     justify-content: space-between;
 }
-#caht-box{
+#chat-box{
     height: 400px;
     padding: 12px 10px;
     overflow: auto;
