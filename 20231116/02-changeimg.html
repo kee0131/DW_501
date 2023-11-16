@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <img id="image" src="../resources/img/곰돌이.img.jpg"  width="500" height="500">
+    <input type="button" onclick="changeImage()" value="눌러보세요">
+</body>
+<script>
+    function changeImage(){
+    
+       const img= document.getElementById("image");
+    //    img.src="../resources/img/coffee.jpg";
+    img.setAttribute("src","../resources/img/coffee.jpg");//setAttribute 변경해주는 함수 (속성, 변경해줄 값) 
+    // getAttribute 가져오는 함수 (가져오고 싶은 명
+    img.getAttribute("src")
+   
+    console.log(img.getAttribute("src"))
+    }
+      
+      
+      
+    
+     
+        
+
+</script>
+</html>
