@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>진행 중인 과목</h2>
+    <ul id="doing-list">
+        <li>인터랙티브 자바스크립트</li>
+        <li>반응형 CSS</li>
+        <li>웹 HTAML</li>
+        <li>jQjeksls</li>
+    </ul>
+    <h2>완료한 과목</h2>
+    <ul id="done-list">
+        <li>프로그래밍</li>
+        <li>핵심 자바스크립트</li>
+        <li>기초 자바스크립트</li>
+        <li>모던 자바스크립트</li>
+        <li>웹 퍼플리싱</li>
+        <li>HTML 핵심</li>
+    </ul>
+
+    
+</body>
+<script>
+const doingList =document.querySelector("#doing-list");
+const doneList =document.querySelector("#done-list");
+
+
+doneList.parentElement.children[3].children[4].style.backgroundColor="orange";
+doneList.parentElement.children[1].children[1].style.fontSize="32px"
+doneList.parentElement.children[3].firstElementChild.style.border="3px solid red"
+doingList.children[2].style.border="3px solid red"
+// doingList.parentElement.lastElementChild.style.fontSize="32px"
+doingList.parentElement.children[3].lastElementChild.style.border="3px solid red";
+
+
+
+
+
+
+</script>
+</html>
