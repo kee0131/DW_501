@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <from>
+    이름: <input type="text" name="name"><br>
+    나이: <input type="radio" name="age" value="20대">
+          <label for="age">20대</label>
+
+          <input type="radio" name="age" value="30대">
+          <label for="age">30대</label>
+
+          <input type="radio" name="age" value="40대">
+          <label for="age">40대</label><br>
+    좋아하는 과일 :  <input type="checkbox" name="fruit" id="apple"/> 
+                    <label for="apple">사과</label> 
+
+                    <input type="checkbox" name="fruit" id="banana"/> 
+                    <label for="banana">바나나</label> 
+
+                    <input type="checkbox" name="fruit" id="pear"/> 
+                    <label for="pear">배</label> 
+
+                    
+                    <input type="checkbox" name="fruit" id="orange"/> 
+                    <label for="orange">오랜지</label> 
+
+                    
+                    <input type="checkbox" name="fruit" id="plum"/> 
+                    <label for="plum">자두</label> 
+
+                    
+                    <input type="checkbox" name="fruit" id="watermelon"/> 
+                    <label for="watermelon">수박</label> 
+
+                    <input type="checkbox" name="fruit" id="peach"/> 
+                    <label for="peach">복숭아</label> 
+                    <br>
+                    <input type="button" value="결과출력" id="resultBtn"><br>
+                    <textarea rows="10" cols="50"></textarea>
+                    </from>
+                </body>
+                <script>
+                    const resultBtn= document.getElementById("resultBtn");
+                    resultBtn.addEventListener("click",function(){
+                        const name=document.querySelector("input[name=name]").value;
+                        
+                         const radioEl=document.querySelectorAll("input[type=radio]:checked")
+                         const checkboxArr=document.querySelectorAll(("input[type=checkbox]:checked"))  
+                         const newArr=[];
+                         checkboxArr.forEach(function(el){
+                            newArr.push(el.nextElementSibling.innerHTML)
+                        })                   
+                        const textareaEl= document.querySelector("textarea")
+                        textareaEl.innerHTML=(`${name}!!\n 나이는${radio.value}이고\n 좋아하는 과일은 ${newArr.toString()}이군용`)
+                    })
+ 
+
+                    
+                    
+                    
+                </script>
+                </html>
+                
+         
+
+
+             
+
+                    
+
+
+
+
+     
+
+         
