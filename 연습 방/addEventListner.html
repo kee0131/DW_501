@@ -6,8 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-   <from>
-    이름: <input type="text" name="name"><br>
+   <form>
+    이름: <input type="text" name="name" ><br>
     나이: <input type="radio" name="age" value="20대">
           <label for="age">20대</label>
 
@@ -42,22 +42,29 @@
                     <br>
                     <input type="button" value="결과출력" id="resultBtn"><br>
                     <textarea rows="10" cols="50"></textarea>
-                    </from>
+                    </form>
+
                 </body>
                 <script>
-                    const resultBtn= document.getElementById("resultBtn");
-                    resultBtn.addEventListener("click",function(){
-                        const name=document.querySelector("input[name=name]").value;
-                        
-                         const radioEl=document.querySelectorAll("input[type=radio]:checked")
-                         const checkboxArr=document.querySelectorAll(("input[type=checkbox]:checked"))  
-                         const newArr=[];
-                         checkboxArr.forEach(function(el){
-                            newArr.push(el.nextElementSibling.innerHTML)
-                        })                   
-                        const textareaEl= document.querySelector("textarea")
-                        textareaEl.innerHTML=(`${name}!!\n 나이는${radio.value}이고\n 좋아하는 과일은 ${newArr.toString()}이군용`)
+                   const resultBtn=document.getElementById("resultBtn");
+                   resultBtn.addEventListener("click",function(){
+                    //1.작성한 이름 가져오기
+                    const name=document.querySelector("input[name=name]").value;
+                    //2.선택한 성별 가져오기
+
+                    const radioEl= document.querySelector("input[type=radio]:checked");
+                    //3.선택항 취미 가져오기
+                    const checkboxArr= document.querySelectorAll("input[type=checkbox]:checked");
+                    const newArr=[];
+                    checkboxArr.forEach(function(el){
+                        newArr.push(el.nextElementSibling.innerHTML);
                     })
+                    //4.textarea에 종합 정보 출력하기
+                    const textareaEl =document.querySelector("textarea");
+                    textareaEl.innerHTML=(`${name}씨\n 나이는${radioEl.value}이고\n 좋아하는 과일은${newArr.toString()}이군요!`)
+
+
+                   })
  
 
                     
@@ -67,7 +74,7 @@
                 </html>
                 
          
-
+ 
 
              
 
