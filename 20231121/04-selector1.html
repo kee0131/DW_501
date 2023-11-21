@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  </head>
+  <body>
+    <p>이 문단에는 <span>스팬</span>엘리먼트가 있다</p>
+    <div>
+      이 div에도 <span>스팬</span>엘리먼트가 있다
+      <p>div의 내부 문단의 <span>스팬</span>엘리먼트가 있다</p>
+      <div>
+        <p>
+          내부 div의 다시 속 아주
+          <strong>깊은곳에</strong>
+          <em>숨어있는</em>
+          <span>스팬</span>엘리먼크도 있다
+        </p>
+      </div>
+    </div>
+  </body>
+  <script>
+    //span태그의 배경색 노랑
+    $("span").css("backgroundColor", "yellow");
+    //div의 모든 후손 중 span태그만 테두리 빨강
+    $("div span").css("border", "solid 3px red");
+    //div의 바로 다음 자식 span태그의 태두리 파랑
+    $("div>span").css("border", "solid 3px blue");
+  </script>
+</html>
