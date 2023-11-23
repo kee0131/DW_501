@@ -6,6 +6,14 @@
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
   </head>
+  <style>
+    table,
+    tr,
+    th{
+      border: 1px solid black;
+    }
+  </style>
+
   <body>
     <ul>
       <li>one</li>
@@ -51,8 +59,10 @@
     $("li:odd").css("backgroundColor","red")
     
     
-    $("tr:first").css("backgroundColor","black")
-    $("tr:even").css("backgroundColor","pink")
+    $("tr:odd").css("backgroundColor","yellow")
+    $("gr:even").css("backgroundColor","black").css("color","gray")
+    $("tr:first").css("backgroundColor","black").css("color","white")
+    // $("tr:even").css("backgroundColor","pink")
  
   </script>
 </html>

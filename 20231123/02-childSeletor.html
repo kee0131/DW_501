@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  </head>
+  <body>
+    <p>여자에게 인기 있는 남자</p>
+    <ol>
+      <li>능력있는 남자</li>
+      <li>돈 많은 남자</li>
+      <li>잘 생긴 남자</li>
+      <li>프로그래머</li>
+    </ol>
+    <p>남자에게 인기 있는 여자</p>
+    <ol>
+      <li>예쁜여자</li>
+      <li>귀여운 여자</li>
+      <li>섹시한 여자</li>
+    </ol>
+  </body>
+  <script>
+    $("li:first-child").css("border", "2px solid red"); //능력,예쁜여자 두개 다 바뀜
+    $("li:first").css("backgroundColor", "yellow");//두개의 ol 다 포함해서 첫번째 하나만
+    $("li:only-child").css("backgroundColor", "bule");//외동이여야함
+    $("li:nth-child(2)").not("li:first").css("backgroundColor", "skyblue")
+    // $("li").not("li:first").css("backgroundColor", "blue")
+  </script>
+</html>
