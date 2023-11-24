@@ -29,20 +29,20 @@
     // console.log($("label[for=user]").html());
     // console.log($("label[for=user]").text());
     $("label[for=user]").html("Name");
-    ($("#user").val("유경희"))
-    // console.log("#btnChange")
-    $("#btnChange").on("click",function(){
-      const newName =  prompt("변경할 이름을 작성하세요")
+    $("#user").val("America");
+
+    $("#btnChange").on("click", function () {
+      const newName = prompt("새로운 이름을 입력해주세요.");
       $("#user").val(newName);
-    })
+    });
 
-    $("#btnView").on("click",function(){
-      const newName1 =  $("#user").val()
-      const gend =$(:c)
+    $("#btnView").on("click", function () {
+      const name = $("#user").val();
+      const gender = $("[name=gend]:checked").val();
+      const intro = $("textarea").val();
+      const job = $(":selected").val();
 
-
-      alert(``)
-
-    })
+      alert(`${name}, ${gender}, ${intro}, ${job}`);
+    });
   </script>
 </html>
