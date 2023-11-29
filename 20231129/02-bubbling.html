@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-bubbling</title>
+</head>
+<style>
+    form{
+        background-color: gray;
+        position: relative;
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        cursor: pointer;
+        left: 250px;
+    }
+
+    div{
+        background-color: blue;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: 50px;
+        left: 50px;
+    }
+    p{
+        background-color: aqua;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 50px;
+        left: 50px;
+        margin: 0;
+    }
+
+
+</style>
+
+<body>
+    <!-- <div  onclick="alert('div에 할당한 핸들러!')">
+        <p onclick="alert('p태그에 할당한 핸들러!')">
+            <code onclick="alert('code태그에 할당한 핸들러')">EM</code>을 클릭 했는데도 <code>div</code>에 할당하는 이벤트가
+            작동됩니다
+        </p>
+    </div> -->
+    <form>form
+        <div>div
+            <p>p</p>
+        </div>
+    </form>
+    <div onclick="alert('div을 감싸고 있는 버튼')">
+    <button>클릭해주세요</button>
+    </div>
+</body>
+<script>
+    const form = document.querySelector("form");
+    form.addEventListener("click",function(e){
+        alert(`target:${e.target.tagName}, this : ${this.tagName}`)
+    })
+
+    const btn= querySelector("button");
+    btn.addEventListener("click",function(e){
+        alert("버튼 클릭")
+        e.stopPropagation()
+    })
+
+</script>
+</html>
