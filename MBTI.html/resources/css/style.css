@@ -4,8 +4,11 @@
 body {
   margin: 0;
 }
+
+html{
+  font-family: Pretendard;
+}
 html,
-body,
-.container {
+body {
   width: 100%;
 }
