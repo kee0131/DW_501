@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="resouces/css/index.css" />
   <body>
     <header>
-      <div class="wrap">DW Music</div>
+      <div class="wrap"><span>Music</span></div>
     </header>
     <section class="hero">
       <video src="resouces/vidio/bg.mp4" class="bg" autoplay loop muted></video>
@@ -105,4 +105,11 @@
       </div>
     </section>
   </body>
+  <script>
+    const dd = document.querySelector("header .wrap > span");
+
+    dd.addEventListener("click", function () {
+      location.href = "musicplayer.html";
+    });
+  </script>
 </html>

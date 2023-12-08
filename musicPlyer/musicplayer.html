@@ -337,10 +337,39 @@
         </li>
       
     </section>
+    <div class="palyer">
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+      <div class="palyer-min">
+        <div class="info">
+          <img class="current" src="resouces/img/img/img_current_song.png" />
+          <div class="tiltle">Afer Sunet</div>
+          <div class="artist">BenJamin</div>
+        </div>
+        <div class="controls">
+          <img src="resouces/img/img/icon_before.svg" />
+          <img src="resouces/img/img/icon_pause.svg" />
+          <img src="resouces/img/img/icon_after.svg" />
+        </div>
+        <div class="time">2:34 / 5:56</div>
+      </div>
+    </div>
   </div>
   </main>
    
 
     
 </body>
+<script>
+const meunitems =document.querySelectorAll(".meun-item");
+meunitems.forEach(function(el,idx){
+el.addEventListener("click",function(){
+
+  if(idx==0){
+    location.href="index.html"
+  }
+})
+})
+  </script>
 </html>
