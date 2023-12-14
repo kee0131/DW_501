@@ -118,6 +118,7 @@ p{
   width: 243px;
   padding: 39px 33px;
   background-color: #f5f5f8;
+  display: flex;
 
 }
 .swiper-slide .swiper-slide-prev{
