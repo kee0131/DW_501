@@ -25,6 +25,10 @@
     display: flex;
     list-style: none;
     color: #fff;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+
   
 }
 .inr li{
