@@ -113,7 +113,8 @@ body {
 .dokdo_wrap {
   display: flex;
   overflow: hidden;
-  padding: 0 0 143px;
+  padding: 0 0 100px;
+  margin-bottom: 100px;
 }
 
 .infowrap {
@@ -287,16 +288,22 @@ body {
   background-color: #09847f;
   display: flex;
   flex: 50%;
-  position: relative;
-  border-radius: 30px;
+  top: -100px;
+  margin: 10px;
 
-  top: -30px;
+  border-radius: 30px;
+  position: absolute;
+
   left: 50%;
   transform: translateX(-50%);
   box-shadow: 0 9rem 25rem 5rem #00000036;
   z-index: 1;
   width: 1400px;
   height: 235px;
+}
+.banner_wrap {
+  position: relative;
+  height: 100%;
 }
 .rigt-wrap2 p {
   flex-grow: 1;
@@ -347,8 +354,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  
+  position: relative;
 }
 .footer p {
   font-size: 32px;
@@ -360,4 +366,17 @@ body {
   margin: 10px;
   position: relative;
   top: 10px;
+}
+.infoCopy {
+  display: flex;
+  list-style: none;
+  font-weight: 200;
+
+  flex-wrap: wrap;
+ 
+}
+.infoCopy li {
+  color: #fff;
+  margin-right: 10px;
+
 }
