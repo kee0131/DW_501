@@ -325,13 +325,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px;
+  padding: 2px;
   color: #fff;
   text-decoration: none;
 }
 .banner > a {
   flex: 50%;
   position: relative;
+
 }
 .banner h3 {
   padding-bottom: 20px;
@@ -356,6 +357,7 @@ body {
   align-items: center;
   position: relative;
 }
+
 .footer p {
   font-size: 32px;
 
