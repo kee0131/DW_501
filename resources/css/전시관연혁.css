@@ -43,4 +43,37 @@
     padding: 10px;
     text-decoration: none;
   }
-  
+  i{
+    font-style: normal;
+  }
+  .tac{
+    text-align: center !important;
+    margin-bottom: 30px;
+  }
+.item{
+  position: relative;
+    display: flex;
+    width: 100%;
+    table-layout: fixed;
+}
+.area_history .item dl dt::after{
+  content: '';
+    display: block;
+    width: 8.5rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-color: #09847F;
+    position: absolute;
+    top: 17rem;
+    left: -90rem;
+}
+.dl::before{
+  content: '';
+    width: 1rem;
+    position: absolute;
+    top: 0;
+    bottom: -260rem;
+    left: 0;
+    background-color: #dbdbdb;
+}
+
