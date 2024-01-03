@@ -1,10 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.container-fluid {
+  background-color: wheat;
 }
-
 .logo {
   margin-right: 30px;
 }
@@ -35,3 +31,43 @@
   border-bottom: 0;
   border-left: 0.3em solid transparent;
 } */
+.header{
+  display: flex;
+}
+
+.header_img1 {
+  display: flex;
+
+  width: 100%;
+  margin-right: 30px;
+  display: flex;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  justify-content: start;
+  align-items: start;
+}
+.header_img2{
+  display: flex;
+
+  width: 100%;
+  margin-right: 30px;
+  display: flex;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  justify-content: start;
+  align-items: start;
+}
+.txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header_txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  background-color: antiquewhite;
+}
