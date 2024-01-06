@@ -97,14 +97,17 @@ height: 1000px;
   .rhwjd{
     background-color: aqua;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     position: fixed;
   }
-  .rhwjd P{
-    /* display: flex; */
+
+  .유경희{
+    display: flex;
     justify-content: center;
     align-items: center;
+    /* position: relative; */
   }
+  
 
                                                         
