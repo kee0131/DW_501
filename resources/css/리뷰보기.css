@@ -1,0 +1,15 @@
+
+body{
+    background-color: antiquewhite;
+  }
+  .main-wrap{
+    display: flex;
+}
+.wrap{
+    width:330px ;
+    height:500px ;
+    background-color: #a9a9a9;
+    margin: 50px;
+    border-radius: 30px;
+
+}
