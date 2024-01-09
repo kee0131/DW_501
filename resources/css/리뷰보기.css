@@ -5,11 +5,33 @@ body{
   .main-wrap{
     display: flex;
 }
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  border-bottom: 1px solid #a9a9a9;
+}
+
 .wrap{
     width:330px ;
     height:500px ;
     background-color: #a9a9a9;
-    margin: 50px;
+    margin: 100px;
     border-radius: 30px;
+    position: relative;
 
+}
+.wrap img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+margin: 50px;
+border-radius: 10px;
+padding: 10px;
+
+}
+.logo{
+  width:50px ;
+  height: 50px;
 }
