@@ -116,7 +116,10 @@ body {
 }
 .container {
   display: flex;
+  margin-right: 30px;
+  margin: 50px;
 }
 .container_1 {
   display: flex;
+  margin-left: 30px;
 }
