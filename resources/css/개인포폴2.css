@@ -1,0 +1,11 @@
+.list-group {
+  display: flex;
+  flex-direction: row;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  background-color: ;
+}
