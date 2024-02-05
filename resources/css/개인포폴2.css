@@ -57,4 +57,7 @@ h1 {
 }
 .footer {
   background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
