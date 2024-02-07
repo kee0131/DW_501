@@ -1,0 +1,136 @@
+body {
+  background-color: antiquewhite;
+}
+.container-fluid {
+  background-color: wheat;
+}
+.logo {
+  margin-right: 30px;
+}
+.nav-item > a::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  background-color: gray;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  transition: all 0.4s;
+}
+
+.nav-item > a:hover::before {
+  width: 100px;
+}
+
+/* .dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+} */
+.header {
+  display: flex;
+  background-repeat: no-repeat;
+  justify-content: space-evenly;
+  background-color: bisque;
+}
+
+.txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+}
+.header_txt {
+  background-color: bisque;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.center {
+  background-color: #fbeacd;
+  width: 100%;
+  height: 140px;
+  top: -500px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list {
+  display: flex;
+  list-style: none;
+  font-weight: 300;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.list li {
+  padding: 10px;
+  text-decoration: none;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  top: -50px;
+  margin-bottom: 30px;
+}
+
+.p-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.d-block {
+  width: 50%;
+  height: 50%;
+}
+.rhwjd {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  right: 0;
+  bottom: 80px;
+  min-height: 50px;
+  margin-left: 440px;
+  text-align: center;
+  z-index: 1;
+  background-color: aqua;
+  border-radius: 30px;
+}
+.list-tag {
+  text-decoration: none;
+}
+h3 {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  margin-right: 30px;
+  margin-bottom: 50px;
+}
+.container_1 {
+  display: flex;
+  margin-left: 30px;
+}
+.img_tag1 {
+  margin-right: 10px;
+}
+.img_tag2 {
+  margin-left: 10px;
+}
