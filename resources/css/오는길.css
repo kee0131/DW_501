@@ -1,0 +1,51 @@
+body {
+  background-color: antiquewhite;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  border-bottom: 1px solid #a9a9a9;
+  margin-bottom: 10px;
+}
+.logo{
+  width:50px ;
+  height: 50px;
+}
+#carouselExample {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.p-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.d-block {
+  border-radius: 30px;
+}
+.img-tag {
+  margin-left: 30px;
+}
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.map span{
+  border: 0;
+    border-collapse: collapse;
+    font-family: Pretendard,sans-serif;
+    font-size: 100%;
+    font-style: normal;
+    line-height: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
